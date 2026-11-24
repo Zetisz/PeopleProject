@@ -24,7 +24,7 @@ namespace PeopleProject
 
         internal double AtlagEletkor(int minEletkor, int maxEletkor)
         {
-            if (eletkorok.Count() == 0)
+            if (eletkorok.Count == 0)
             {
                 throw new InvalidOperationException("Nincs személy a listában");
             }
