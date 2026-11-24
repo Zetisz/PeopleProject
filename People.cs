@@ -32,7 +32,7 @@ namespace PeopleProject
             if (minEletkor < 0 || maxEletkor < 0 || minEletkor > maxEletkor)
             {
                 throw new ArgumentException("Érvénytelen min vagy max életkor");
-            }     
+            }
 
             int osszeg = 0;
             int elemek = 0;

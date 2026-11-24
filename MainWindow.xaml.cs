@@ -16,9 +16,34 @@ namespace PeopleProject
     /// </summary>
     public partial class MainWindow : Window
     {
+        People p = new People();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btn_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                p.UjSzemely(int.Parse(tb.Text));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void btnAtlag_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                lbl.Content = p.AtlagEletkor(int.Parse(tbMin.Text), int.Parse(tbMax.Text));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }
