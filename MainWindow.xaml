@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Image x:Name="img" HorizontalAlignment="Center" VerticalAlignment="Top" Height="120" Width="200"/>
         <TextBox x:Name="tb" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="50" FontSize="30" Margin="0, -120, 0, 0" VerticalContentAlignment="Center"></TextBox>
         <Button x:Name="btn" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="50"  FontSize="24" Click="btn_Click">Hozzáadás</Button>
         <TextBox x:Name="tbMin" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="50" FontSize="30" Margin="0, 140, 150, 0" VerticalContentAlignment="Center" Text="min"></TextBox>

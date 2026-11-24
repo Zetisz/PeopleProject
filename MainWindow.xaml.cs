@@ -38,7 +38,9 @@ namespace PeopleProject
         {
             try
             {
-                lbl.Content = p.AtlagEletkor(int.Parse(tbMin.Text), int.Parse(tbMax.Text));
+                double atlag = p.AtlagEletkor(int.Parse(tbMin.Text), int.Parse(tbMax.Text));
+                lbl.Content = atlag;
+                img.Source = new BitmapImage(new Uri($"pack://application:,,,/imgs/{p.Kategoria(atlag)}.jpg"));
             }
             catch (Exception ex)
             {

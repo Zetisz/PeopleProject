@@ -47,5 +47,21 @@ namespace PeopleProject
 
             return osszeg / elemek;
         }
+
+        internal string Kategoria(double atlag)
+        {
+            if (atlag <= 18)
+            {
+                return "gyermek";
+            }
+            else if (atlag <= 65)
+            {
+                return "felnott";
+            }
+            else
+            {
+                return "nyugdijas";
+            }
+        }
     }
 }
