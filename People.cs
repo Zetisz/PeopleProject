@@ -45,7 +45,7 @@ namespace PeopleProject
                 }
             }
 
-            return osszeg / elemek;
+            return (double)osszeg / elemek;
         }
 
         internal string Kategoria(double atlag)
