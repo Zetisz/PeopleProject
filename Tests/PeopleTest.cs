@@ -45,5 +45,13 @@ namespace PeopleProject.Tests
             people.UjSzemely(40);
             Assert.That(() => people.AtlagEletkor(20, 10), Throws.TypeOf<ArgumentException>());
         }
+
+        [Test]
+        public void Kategoria()
+        {
+            people.UjSzemely(20);
+            people.UjSzemely(40);
+            Assert.That(people.Kategoria(people.AtlagEletkor(10, 50)), Is.EqualTo("felnott"));
+        }
     }
 }
