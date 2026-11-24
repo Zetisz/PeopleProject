@@ -10,8 +10,8 @@
         <Image x:Name="img" HorizontalAlignment="Center" VerticalAlignment="Top" Height="120" Width="200"/>
         <TextBox x:Name="tb" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="50" FontSize="30" Margin="0, -120, 0, 0" VerticalContentAlignment="Center"></TextBox>
         <Button x:Name="btn" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="50"  FontSize="24" Click="btn_Click">Hozzáadás</Button>
-        <TextBox x:Name="tbMin" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="50" FontSize="30" Margin="0, 140, 150, 0" VerticalContentAlignment="Center" Text="min"></TextBox>
-        <TextBox x:Name="tbMax" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="50" FontSize="30" Margin="150, 140, 0, 0" VerticalContentAlignment="Center" Text="max"></TextBox>
+        <TextBox x:Name="tbMin" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="50" FontSize="30" Margin="0, 140, 150, 0" VerticalContentAlignment="Center" Text="0"></TextBox>
+        <TextBox x:Name="tbMax" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="50" FontSize="30" Margin="150, 140, 0, 0" VerticalContentAlignment="Center" Text="100"></TextBox>
         <Button x:Name="btnAtlag" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="50"  FontSize="24" Margin="0, 280, 0, 0" Click="btnAtlag_Click">Átlagszámítás</Button>
         <Label x:Name="lbl" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="30"></Label>
     </Grid>
